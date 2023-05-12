@@ -1,0 +1,159 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  /* background-color: rgb(255, 234, 127); */
+  height: 90vh;
+}
+
+@font-face {
+  font-family: syne-bold;
+  src: url('./assets/Syne/static/Syne-Bold.ttf')
+}
+
+@font-face {
+  font-family: syne-medium;
+  src: url('./assets/Syne/static/Syne-Medium.ttf')
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* background-color: blueviolet; */
+}
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+.App h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  position: relative;
+  margin-bottom: 25px;
+  font-family: syne-bold;
+}
+
+.App canvas {
+  margin-top: 20px;
+}
+
+.genButton {
+  margin: 7px;
+  background-color: rgb(18, 18, 18);
+  font-family: syne-medium;
+}
+
+.clearButton {
+  margin: 7px;
+  background-color: rgb(18, 18, 18);
+  font-family: syne-medium;
+}
+
+.clearOutButton {
+  margin: 7px;
+  background-color: rgb(18, 18, 18);
+  font-family: syne-medium;
+}
+
+.images {
+  display: inline-block;
+  margin: 50px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  width: 100vh;
+  height: 50vh;
+  background-color: rgb(87, 87, 87);
+  border-radius: 20px;
+  padding-top: 37px;
+}
+
+.brush-slider {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(18, 18, 18);
+}
+
+.imin {
+  /* padding-top: 8vh;   */
+  margin-right: 20px;
+}
+
+.imout {
+  padding-top: 8vh;
+  margin-left: 20px
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.filePicker {
+  position: relative;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: rgb(18, 18, 18);
+  font-family: syne-medium;
+  /* margin-left: -80px */
+  color: white;
+}
+
+.brushlabel {
+  font-family: syne-medium;
+  color: white;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #4b4b4b;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-left: 24vw;
+  margin-top: 20vh;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index:99;
+  background-color: #4b4b4b76;
+} */
+
+.overlay {
+  display: inline-block;
+  position: absolute;
+  top: 221px;
+  left: 323px;
+  width: 101vh;
+  height: 54vh;
+  background-color: rgb(54, 54, 54);
+  border-radius: 20px;
+  z-index:99;
+}
